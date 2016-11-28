@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cookOrderApp">
+<head>
+  <meta charset="utf-8">
+  <title>System Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../appframework/dist/css/sb-admin-2.css">
+  <link rel="stylesheet" href="../appframework/vendor/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../appframework/vendor/metisMenu/metisMenu.css">
+  <link rel="stylesheet" href="../appframework/vendor/morrisjs/morris.css">
+  <link rel="stylesheet" href="app.css">
+
+</head>
+<body class="row">
+
+<div id="wrapper">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">订餐系统 1.0 version</a>
+    </div>
+    <!-- /.navbar-header -->
+
+    <ul class="nav navbar-top-links navbar-right">
+
+
+      <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+      </a>
+      <ul class="dropdown-menu dropdown-user">
+        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+        </li>
+        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+        </li>
+        <li class="divider"></li>
+        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+        </li>
+      </ul>
+    </li>
+      <!-- /.dropdown -->
+    </ul>
+    <!-- /.navbar-top-links -->
+
+    <div class="navbar-default sidebar" role="navigation">
+      <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+          <li class="sidebar-search">
+            <div class="input-group custom-search-form">
+              <input type="text" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+            </div>
+          </li>
+          <li>
+            <a><i class="fa fa-dashboard fa-fw"></i>首页</a>
+          </li>
+          <li>
+            <a><i class="fa fa-bar-chart-o fa-fw"></i> 预约<span class="fa arrow"></span></a>
+            <ul class="nav nav-second-level">
+              <li>
+                <a href="#bookOrder">预约取号</a>
+              </li>
+              <li>
+                <a href="#order">预约订餐</a>
+              </li>
+            </ul>
+            <!-- /.nav-second-level -->
+          </li>
+        </ul>
+      </div>
+      <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+  </nav>
+  <div class="container-fluid"  id="page-wrapper">
+     <app-main ></app-main>
+    </div>
+</div>
+</div>
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="../appframework/vendor/metisMenu/metisMenu.js"></script>
+<script src="../appframework/dist/js/sb-admin-2.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="Module/com.cookOrder.mainModule.js">
+
+</script>
+
+
+<script src="Module/order-Module.js"></script>
+<script src="Module/com.cookOrder.mainModule.js"></script>
+<script src="directive/Main-directive.js"></script>
+<script src="controller/Order-controller.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
